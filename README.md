@@ -31,6 +31,7 @@ Server provides query api for these transports.
 
 ## What you can do
 
+* Picks up new log files every minute
 * Look for text
 * Filter by maximum level (if Info is selected verbose and silly wont show).
 * Select amount of rows to show.
@@ -39,4 +40,9 @@ Server provides query api for these transports.
 ## What it cant do
 
 * It cannot sort even thought he Api provides a way to do so because the order 'desc' has a bug and does not paginate.
+
 * Cannot filter by time. if you are really interested in this and just let me know and i can make it work. I had it at some point but while investingating the transport query function i removed this functionality.
+
+## Roadmap
+
+* Add text filter functionality to log select dropdown
