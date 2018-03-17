@@ -6,7 +6,9 @@ const glob = util.promisify(require('glob'));
 module.exports = config => {
   const files$ = new Rx.BehaviorSubject([]);
   const getSourceFiles = () =>
-    glob(config.path + config.logFiles)
+    glob(config.logFiles, {
+      root: config.path
+    })
       .then(result => files$.next(result))
       .catch(console.error);
 
