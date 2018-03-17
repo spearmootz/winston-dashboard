@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-module.exports = (config) => {
+module.exports = config => {
   const port = config.port || 8000;
 
   app.use('/api', require('./router/api')(config));

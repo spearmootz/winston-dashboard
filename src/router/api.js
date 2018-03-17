@@ -4,12 +4,11 @@ const express = require('express');
 const fileFinder = require('../utilities/fileFinder');
 const getLogger = require('../utilities/getLogger');
 
-
 module.exports = config => {
   const router = express.Router();
   let sources = {};
   let sourceNames;
-  const validSource = (source) => source != null && sources[source] != null;
+  const validSource = source => source != null && sources[source] != null;
 
   fileFinder(config).subscribe(files => {
     sourceNames = files.map(filePath => path.relative(config.path, filePath));
@@ -17,7 +16,7 @@ module.exports = config => {
     sourceNames.forEach(sourceName => {
       sources[sourceName] = getLogger(path.join(config.path, sourceName));
     });
-  })
+  });
 
   router.use('/sources', (req, res, next) => {
     res.send(sourceNames);
@@ -42,7 +41,6 @@ module.exports = config => {
 
       res.send(results);
     });
-
   });
 
   return router;

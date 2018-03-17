@@ -3,12 +3,12 @@ const Rx = require('rxjs');
 const util = require('util');
 const glob = util.promisify(require('glob'));
 
-
 module.exports = config => {
   const files$ = new Rx.BehaviorSubject([]);
-  const getSourceFiles = () => glob(config.path + config.logFiles)
-    .then(result => files$.next(result))
-    .catch(console.error);
+  const getSourceFiles = () =>
+    glob(config.path + config.logFiles)
+      .then(result => files$.next(result))
+      .catch(console.error);
 
   getSourceFiles();
   setInterval(getSourceFiles, 60 * 1000);
