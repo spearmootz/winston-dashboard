@@ -1,12 +1,13 @@
 {
   "name": "winston-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "React Based Log Browser",
   "main": "src/index.js",
   "scripts": {
     "dev":
       "concurrently \"nodemon test.js\" \"cd src/front-end && parcel index.html --public-url /\"",
     "build": "cd src/front-end && parcel build index.html --public-url /",
+    "publish": "npm run build",
     "test": "./"
   },
   "author": "",
@@ -34,5 +35,6 @@
   },
   "peerDependencies": {
     "winston": "^2.4.1"
-  }
+  },
+  "files": ["src/**/*.js", "src/**/*.css", "src/**/*.html"]
 }
