@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import moment from 'moment';
 import Dropdown from './components/Dropdown';
-import './../../node_modules/bootstrap/dist/css/bootstrap.css';
-import './index.css';
+import './index.scss';
 import {
   Container,
   Row,
