@@ -102,6 +102,7 @@ class App extends Component {
           value={this.state.source}
           options={this.state.sources}
           label="Select Log File"
+          textFilter
         />
       </InputGroup>
     );
@@ -261,13 +262,13 @@ class App extends Component {
 
   render() {
     return (
-      <Container style={{ marginTop: '3rem' }}>
+      <Container fluid style={{ marginTop: '3rem' }}>
         <Row>
           <Col className="text-center">
             <h1>Winston Dashboard</h1>
           </Col>
         </Row>
-        <Row fluid className="justify-content-sm-center&quot;">
+        <Row className="justify-content-sm-center&quot;">
           <Col sm="auto">
             {this.sourceSelector}
             {this.inputFilter}

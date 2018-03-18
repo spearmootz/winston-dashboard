@@ -1,6 +1,6 @@
 {
   "name": "winston-dashboard",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "React Based Log Browser",
   "main": "src/index.js",
   "scripts": {
