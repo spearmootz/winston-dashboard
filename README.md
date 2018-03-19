@@ -43,3 +43,7 @@ Server provides query api for these transports.
 * It cannot sort even thought he Api provides a way to do so because the order 'desc' has a bug and does not paginate.
 
 * Cannot filter by time. if you are really interested in this and just let me know and i can make it work. I had it at some point but while investingating the transport query function i removed this functionality.
+
+## Roadmap
+
+* Add a refresh button

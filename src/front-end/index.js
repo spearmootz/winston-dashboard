@@ -163,7 +163,7 @@ class App extends Component {
   get table() {
     return (
       <div>
-        <div style={{ height: '800px', overflowY: 'scroll' }}>
+        <div style={{ height: '60%', overflowY: 'scroll' }}>
           <Table>
             <thead>
               <tr>
