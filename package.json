@@ -1,6 +1,6 @@
 {
   "name": "winston-dashboard",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "React Based Log Browser",
   "main": "src/index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "bootstrap": "^4.0.0",
     "browserslist": "^3.2.0",
     "express": "^4.16.3",
+    "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

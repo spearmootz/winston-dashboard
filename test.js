@@ -4,5 +4,6 @@ const winstonServer = require('./src/index');
 winstonServer({
   path: path.join(__dirname, '/logs'),
   logFiles: '/**/*.log',
-  port: 8000
+  port: 8000,
+  orderBy: 'modifiedTime'
 });
