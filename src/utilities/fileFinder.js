@@ -36,7 +36,6 @@ module.exports = config => {
         }
       })
       .then(results => {
-        console.log(results);
         files$.next(results);
       })
       .catch(console.error);
